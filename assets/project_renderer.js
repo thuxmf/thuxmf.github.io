@@ -174,6 +174,25 @@ award_name=null,
 
 
 render_project(
+project_name='APDrawingGAN2',
+figure_path='./assets/projects/apdrawinggan2.jpg',
+title_name='Line Drawings for Face Portraits from Photos using Global and Local Structure based GANs',
+author_list=[
+'Ran Yi',
+'Mengfei Xia',
+'Yong-Jin Liu',
+'Yu-Kun Lai',
+'Paul L. Rosin',
+],
+material_list=[
+['TPAMI', 'https://ieeexplore.ieee.org/document/9069416'],
+['Code', 'https://github.com/yiranran/APDrawingGAN2'],
+],
+award_name=null,
+);
+
+
+render_project(
 project_name='FEditNet',
 figure_path='./assets/projects/feditnet.png',
 title_name='FEditNet: Few-Shot Editing of Latent Semantics in GAN Spaces',
@@ -196,19 +215,19 @@ award_name=null,
 
 
 render_project(
-project_name='APDrawingGAN2',
-figure_path='./assets/projects/apdrawinggan2.jpg',
-title_name='Line Drawings for Face Portraits from Photos using Global and Local Structure based GANs',
+project_name='SMaRt',
+figure_path='./assets/projects/smart.png',
+title_name='SMaRt: Improving GANs with Score Matching Regularity',
 author_list=[
-'Ran Yi',
 'Mengfei Xia',
-'Yong-Jin Liu',
-'Yu-Kun Lai',
-'Paul L. Rosin',
+'Yujun Shen',
+'Ceyuan Yang',
+'Ran Yi',
+'Wenping Wang',
+'Yong-Jin Liu', 'corresponding',
 ],
 material_list=[
-['TPAMI', 'https://ieeexplore.ieee.org/document/9069416'],
-['Code', 'https://github.com/yiranran/APDrawingGAN2'],
+['arXiv', 'https://arxiv.org/pdf/2311.18208.pdf'],
 ],
 award_name=null,
 );
