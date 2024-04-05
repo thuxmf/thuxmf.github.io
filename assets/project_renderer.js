@@ -153,9 +153,9 @@ award_name=null,
 // Projects.
 
 render_project(
-project_name='DPM-Aligner',
-figure_path='./assets/projects/dpm-aligner.jpg',
-title_name='Towards More Accurate Diffusion Model Acceleration with A Timestep Aligner',
+project_name='Time-Tuner',
+figure_path='./assets/projects/time-tuner.jpg',
+title_name='Towards More Accurate Diffusion Model Acceleration with A Timestep Tuner',
 author_list=[
 'Mengfei Xia',
 'Yujun Shen',
@@ -167,7 +167,7 @@ author_list=[
 'Yong-Jin Liu', 'corresponding',
 ],
 material_list=[
-['arXiv', 'https://arxiv.org/pdf/2310.09469.pdf'],
+['CVPR 2024', 'https://arxiv.org/pdf/2310.09469.pdf'],
 ],
 award_name=null,
 );
@@ -185,7 +185,7 @@ author_list=[
 'Paul L. Rosin',
 ],
 material_list=[
-['TPAMI', 'https://ieeexplore.ieee.org/document/9069416'],
+['TPAMI 2020', 'https://ieeexplore.ieee.org/document/9069416'],
 ['Code', 'https://github.com/yiranran/APDrawingGAN2'],
 ],
 award_name=null,
@@ -207,7 +207,7 @@ author_list=[
 'Yong-Jin Liu', 'corresponding',
 ],
 material_list=[
-['AAAI', 'https://ojs.aaai.org/index.php/AAAI/article/view/25394'],
+['AAAI' 2023, 'https://ojs.aaai.org/index.php/AAAI/article/view/25394'],
 ['Code', 'https://github.com/THU-LYJ-Lab/FEditNet'],
 ],
 award_name=null,
