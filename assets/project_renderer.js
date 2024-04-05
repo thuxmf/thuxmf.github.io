@@ -207,7 +207,7 @@ author_list=[
 'Yong-Jin Liu', 'corresponding',
 ],
 material_list=[
-['AAAI' 2023, 'https://ojs.aaai.org/index.php/AAAI/article/view/25394'],
+['AAAI 2023', 'https://ojs.aaai.org/index.php/AAAI/article/view/25394'],
 ['Code', 'https://github.com/THU-LYJ-Lab/FEditNet'],
 ],
 award_name=null,
