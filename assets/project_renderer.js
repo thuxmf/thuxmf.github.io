@@ -153,7 +153,7 @@ award_name=null,
 // Projects.
 
 render_project(
-project_name='Time-Tuner',
+project_name='TimeTuner',
 figure_path='./assets/projects/time-tuner.jpg',
 title_name='Towards More Accurate Diffusion Model Acceleration with A Timestep Tuner',
 author_list=[
