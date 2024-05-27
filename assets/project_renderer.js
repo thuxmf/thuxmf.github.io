@@ -1,5 +1,6 @@
 // Functions.
 
+
 function render_project(project_name,
     figure_path,
     title_name,
@@ -79,6 +80,7 @@ cell.appendChild(award);
 }
 };
 
+
 function render_author(author_name, link=null, alias=null) {
 var list = document.getElementsByName(author_name);
 for (var idx = 0; idx < list.length; idx++) {
@@ -115,15 +117,8 @@ list[idx].setAttribute('class', 'me')
 };
 
 
-
-
-
-
-
-
-
-
 // Template.
+
 
 render_project(
 project_name='template',
@@ -142,15 +137,27 @@ award_name=null,
 );
 
 
-
-
-
-
-
-
-
-
 // Projects.
+
+
+render_project(
+project_name='SMaRt',
+figure_path='./assets/projects/smart.png',
+title_name='SMaRt: Improving GANs with Score Matching Regularity',
+author_list=[
+'Mengfei Xia',
+'Yujun Shen',
+'Ceyuan Yang',
+'Ran Yi',
+'Wenping Wang',
+'Yong-Jin Liu', 'corresponding',
+],
+material_list=[
+['ICML 2024', 'https://arxiv.org/pdf/2311.18208.pdf'],
+],
+award_name=null,
+);
+
 
 render_project(
 project_name='TimeTuner',
@@ -168,25 +175,6 @@ author_list=[
 ],
 material_list=[
 ['CVPR 2024', 'https://arxiv.org/pdf/2310.09469.pdf'],
-],
-award_name=null,
-);
-
-
-render_project(
-project_name='APDrawingGAN2',
-figure_path='./assets/projects/apdrawinggan2.jpg',
-title_name='Line Drawings for Face Portraits from Photos using Global and Local Structure based GANs',
-author_list=[
-'Ran Yi',
-'Mengfei Xia',
-'Yong-Jin Liu',
-'Yu-Kun Lai',
-'Paul L. Rosin',
-],
-material_list=[
-['TPAMI 2020', 'https://ieeexplore.ieee.org/document/9069416'],
-['Code', 'https://github.com/yiranran/APDrawingGAN2'],
 ],
 award_name=null,
 );
@@ -215,47 +203,90 @@ award_name=null,
 
 
 render_project(
-project_name='SMaRt',
-figure_path='./assets/projects/smart.png',
-title_name='SMaRt: Improving GANs with Score Matching Regularity',
+project_name='DCK',
+figure_path='./assets/projects/dck.png',
+title_name='Audio-Driven Talking Face Video Generation with Dynamic Convolution Kernels',
 author_list=[
+'Zipeng Ye',
 'Mengfei Xia',
-'Yujun Shen',
-'Ceyuan Yang',
 'Ran Yi',
-'Wenping Wang',
+'Juyong Zhang',
+'Yu-Kun Lai',
+'Xuwei Huang',
+'Guoxin Zhang',
 'Yong-Jin Liu', 'corresponding',
 ],
 material_list=[
-['arXiv', 'https://arxiv.org/pdf/2311.18208.pdf'],
+['TMM 2022', 'https://arxiv.org/pdf/2201.05986v1'],
 ],
 award_name=null,
 );
 
 
+render_project(
+project_name='3DCariGAN',
+figure_path='./assets/projects/3d_carigan.png',
+title_name='3D-CariGAN: An End-to-End Solution to 3D Caricature Generation from Normal Face Photos',
+author_list=[
+'Zipeng Ye',
+'Mengfei Xia',
+'Yanan Sun',
+'Ran Yi',
+'Minjing Yu',
+'Juyong Zhang',
+'Yu-Kun Lai',
+'Yong-Jin Liu', 'corresponding',
+],
+material_list=[
+['TVCG 2021', 'https://ieeexplore.ieee.org/abstract/document/9609545'],
+['Code', 'https://github.com/qq775193759/3D-CariGAN'],
+],
+award_name=null,
+);
 
 
-
-
-
-
+render_project(
+project_name='APDrawingGAN2',
+figure_path='./assets/projects/apdrawinggan2.jpg',
+title_name='Line Drawings for Face Portraits from Photos using Global and Local Structure based GANs',
+author_list=[
+'Ran Yi',
+'Mengfei Xia',
+'Yong-Jin Liu',
+'Yu-Kun Lai',
+'Paul L. Rosin',
+],
+material_list=[
+['TPAMI 2020', 'https://ieeexplore.ieee.org/document/9069416'],
+['Code', 'https://github.com/yiranran/APDrawingGAN2'],
+],
+award_name=null,
+);
 
 
 // Authors.
 
+
 render_author('Ceyuan Yang', 'https://ceyuan.me/');
 render_author('Changsong Lei');
 render_author('Deli Zhao', 'https://zhaodeli.github.io/');
+render_author('Juyong Zhang', 'http://staff.ustc.edu.cn/~juyong/');
 render_author('Mengfei Xia');
-render_author('Paul L. Rosin', 'https://users.cs.cf.ac.uk/Paul.Rosin/')
-render_author('Pengfei Wan', 'https://scholar.google.com/citations?user=P6MraaYAAAAJ')
-render_author('Qiang Li', 'https://sites.google.com/site/utsqiangli2/')
+render_author('Minjing Yu', 'https://scholar.google.com.hk/citations?user=Jq71vN8AAAAJ');
+render_author('Paul L. Rosin', 'https://users.cs.cf.ac.uk/Paul.Rosin/');
+render_author('Pengfei Wan', 'https://scholar.google.com/citations?user=P6MraaYAAAAJ');
+render_author('Qiang Li', 'https://sites.google.com/site/utsqiangli2/');
 render_author('Ran Yi', 'https://yiranran.github.io/');
+render_author('Wang Zhao', 'https://scholar.google.com/citations?user=oKqr-ZQAAAAJ');
 render_author('Wenping Wang', 'https://scholar.google.com/citations?user=28shvv0AAAAJ');
-render_author('Yezhi Shu', 'https://scholar.google.com/citations?user=ItEyqMAAAAAJ')
+render_author('Yanan Sun');
+render_author('Yang Chen', 'https://scholar.google.com.hk/citations?user=IOZERCcAAAAJ');
+render_author('Yezhi Shu', 'https://scholar.google.com/citations?user=ItEyqMAAAAAJ');
 render_author('Yong-Jin Liu', 'https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm');
-render_author('Yu Zhou');
-render_author('Yuji Wang')
+render_author('Yu Zhou', 'https://scholar.google.com/citations?user=pMXjhxkAAAAJ');
+render_author('Yuji Wang');
 render_author('Yujun Shen', 'https://shenyujun.github.io/');
-render_author('Yu-Kun Lai', 'https://users.cs.cf.ac.uk/Yukun.Lai/')
-render_author('Zhongyuan Wang', 'https://scholar.google.com/citations?user=4XVJrRAAAAAJ')
+render_author('Yu-Kun Lai', 'https://users.cs.cf.ac.uk/Yukun.Lai/');
+render_author('Zhongyuan Wang', 'https://scholar.google.com/citations?user=4XVJrRAAAAAJ');
+render_author('Zipeng Ye', 'https://qq775193759.github.io/');
+
