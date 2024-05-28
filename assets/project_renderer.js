@@ -270,6 +270,7 @@ award_name=null,
 render_author('Ceyuan Yang', 'https://ceyuan.me/');
 render_author('Changsong Lei');
 render_author('Deli Zhao', 'https://zhaodeli.github.io/');
+render_author('Guoxin Zhang');
 render_author('Juyong Zhang', 'http://staff.ustc.edu.cn/~juyong/');
 render_author('Mengfei Xia');
 render_author('Minjing Yu', 'https://scholar.google.com.hk/citations?user=Jq71vN8AAAAJ');
@@ -279,6 +280,7 @@ render_author('Qiang Li', 'https://sites.google.com/site/utsqiangli2/');
 render_author('Ran Yi', 'https://yiranran.github.io/');
 render_author('Wang Zhao', 'https://scholar.google.com/citations?user=oKqr-ZQAAAAJ');
 render_author('Wenping Wang', 'https://scholar.google.com/citations?user=28shvv0AAAAJ');
+render_author('Xuwei Huang');
 render_author('Yanan Sun');
 render_author('Yang Chen', 'https://scholar.google.com.hk/citations?user=IOZERCcAAAAJ');
 render_author('Yezhi Shu', 'https://scholar.google.com/citations?user=ItEyqMAAAAAJ');
