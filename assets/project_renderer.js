@@ -141,6 +141,29 @@ render_project(
 
 
 render_project(
+    project_name='GANdance',
+    figure_path='./assets/projects/gandance.jpg',
+    title_name='Exploring Guided Sampling of Conditional GANs',
+    author_list=[
+        'Yifei Zhang', 'equal',
+        'Mengfei Xia', 'equal',
+        'Yujun Shen',
+        'Jiapeng Zhu',
+        'Ceyuan Yang',
+        'Kecheng Zheng',
+        'Lianghua Huang',
+        'Yu Liu',
+        'Fan Cheng', 'corresponding',
+    ],
+    material_list=[
+        // TODO: Update the link.
+        ['ECCV 2024', 'https://arxiv.org/pdf/2311.18208.pdf'],
+    ],
+    award_name=null,
+);
+
+
+render_project(
     project_name='SMaRt',
     figure_path='./assets/projects/smart.png',
     title_name='SMaRt: Improving GANs with Score Matching Regularity',
@@ -174,7 +197,7 @@ render_project(
         'Yong-Jin Liu', 'corresponding',
     ],
     material_list=[
-        ['CVPR 2024', 'https://arxiv.org/pdf/2310.09469.pdf'],
+        ['CVPR 2024', 'https://openaccess.thecvf.com/content/CVPR2024/papers/Xia_Towards_More_Accurate_Diffusion_Model_Acceleration_with_A_Timestep_Tuner_CVPR_2024_paper.pdf'],
     ],
     award_name=null,
 );
@@ -270,8 +293,12 @@ render_project(
 render_author('Ceyuan Yang', 'https://ceyuan.me/');
 render_author('Changsong Lei');
 render_author('Deli Zhao', 'https://zhaodeli.github.io/');
+render_author('Fan Cheng', 'https://www.cs.sjtu.edu.cn/~chengfan/');
 render_author('Guoxin Zhang');
+render_author('Jiapeng Zhu', 'https://scholar.google.com.sg/citations?user=-ACBm-gAAAAJ');
 render_author('Juyong Zhang', 'http://staff.ustc.edu.cn/~juyong/');
+render_author('Kecheng Zheng', 'https://zkcys001.github.io/');
+render_author('Lianghua Huang', 'https://scholar.google.ch/citations?user=JYVCn3AAAAAJ');
 render_author('Mengfei Xia');
 render_author('Minjing Yu', 'https://scholar.google.com.hk/citations?user=Jq71vN8AAAAJ');
 render_author('Paul L. Rosin', 'https://users.cs.cf.ac.uk/Paul.Rosin/');
@@ -284,7 +311,9 @@ render_author('Xuwei Huang');
 render_author('Yanan Sun');
 render_author('Yang Chen', 'https://scholar.google.com.hk/citations?user=IOZERCcAAAAJ');
 render_author('Yezhi Shu', 'https://scholar.google.com/citations?user=ItEyqMAAAAAJ');
+render_author('Yifei Zhang', 'https://scholar.google.com/citations?user=rQKkIykAAAAJ');
 render_author('Yong-Jin Liu', 'https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm');
+render_author('Yu Liu', 'https://scholar.google.com/citations?user=8zksQb4AAAAJ');
 render_author('Yu Zhou', 'https://scholar.google.com/citations?user=pMXjhxkAAAAJ');
 render_author('Yuji Wang');
 render_author('Yujun Shen', 'https://shenyujun.github.io/');
