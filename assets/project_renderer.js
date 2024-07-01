@@ -110,7 +110,7 @@ function render_author(author_name, link=null, alias=null) {
             list[idx].innerHTML = context;
         }
 
-        if (author_name === 'Yujun Shen') {
+        if (author_name === 'Mengfei Xia') {
             list[idx].setAttribute('class', 'me');
         }
     }
