@@ -157,7 +157,7 @@ render_project(
     ],
     material_list=[
         // TODO: Update the link.
-        ['ECCV 2024', 'https://arxiv.org/pdf/2311.18208.pdf'],
+        // ['ECCV 2024', ''],
     ],
     award_name=null,
 );
