@@ -141,6 +141,43 @@ render_project(
 
 
 render_project(
+    project_name='DMT',
+    figure_path='./assets/projects/dmt.jpg',
+    title_name='A Diffusion Model Translator for Efficient Image-to-Image Translation',
+    author_list=[
+        'Mengfei Xia',
+        'Yu Zhou',
+        'Ran Yi',
+        'Yong-Jin Liu', 'corresponding',
+        'Wenping Wang',
+    ],
+    material_list=[
+        ['TPAMI 2024', 'https://ieeexplore.ieee.org/document/10614866'],
+        ['Code', 'https://github.com/thuxmf/dmt'],
+    ],
+    award_name=null,
+);
+
+
+render_project(
+    project_name='FEditNet++',
+    figure_path='./assets/projects/feditnet++.jpg',
+    title_name='FEditNet++: Few-Shot Editing of Latent Semantics in GAN Spaces with Correlated Attribute Disentanglement',
+    author_list=[
+        'Ran Yi',
+        'Teng Hu',
+        'Mengfei Xia',
+        'Yizhe Tang',
+        'Yong-Jin Liu', 'corresponding',
+    ],
+    material_list=[
+        ['TPAMI 2024', 'https://ieeexplore.ieee.org/document/10607942/'],
+    ],
+    award_name=null,
+);
+
+
+render_project(
     project_name='GANdance',
     figure_path='./assets/projects/gandance.jpg',
     title_name='Exploring Guided Sampling of Conditional GANs',
@@ -156,8 +193,8 @@ render_project(
         'Fan Cheng', 'corresponding',
     ],
     material_list=[
-        // TODO: Update the link.
-        // ['ECCV 2024', ''],
+        ['ECCV 2024', ''],
+        ['Code', 'https://github.com/zyf0619sjtu/GANdance'],
     ],
     award_name=null,
 );
@@ -176,7 +213,8 @@ render_project(
         'Yong-Jin Liu', 'corresponding',
     ],
     material_list=[
-        ['ICML 2024', 'https://arxiv.org/pdf/2311.18208.pdf'],
+        ['ICML 2024', 'https://proceedings.mlr.press/v235/xia24d.html'],
+        ['Code', 'https://github.com/thuxmf/SMaRt'],
     ],
     award_name=null,
 );
@@ -198,6 +236,7 @@ render_project(
     ],
     material_list=[
         ['CVPR 2024', 'https://openaccess.thecvf.com/content/CVPR2024/papers/Xia_Towards_More_Accurate_Diffusion_Model_Acceleration_with_A_Timestep_Tuner_CVPR_2024_paper.pdf'],
+        ['Code', 'https://github.com/thuxmf/time-tuner'],
     ],
     award_name=null,
 );
@@ -269,6 +308,46 @@ render_project(
 
 
 render_project(
+    project_name='SE3',
+    figure_path='./assets/projects/se3.jpg',
+    title_name='Efficient SE(3) Reachability Map Generation via Interplanar Integration of Intra-planar Convolutions',
+    author_list=[
+        'Yiheng Han',
+        'Jia Pan',
+        'Mengfei Xia',
+        'Long Zeng',
+        'Yong-Jin Liu', 'corresponding',
+    ],
+    material_list=[
+        ['ICRA 2021', 'https://ieeexplore.ieee.org/document/9561921'],
+    ],
+    award_name=null,
+);
+
+
+render_project(
+    project_name='MSCartoonGAN',
+    figure_path='./assets/projects/ms_cartoongan.jpg',
+    title_name='GAN-Based Multi-Style Photo Cartoonization',
+    author_list=[
+        'Yezhi Shu',
+        'Ran Yi',
+        'Mengfei Xia',
+        'Zipeng Ye',
+        'Wang Zhao',
+        'Yang Chen',
+        'Yu-Kun Lai',
+        'Yong-Jin Liu', 'corresponding',
+    ],
+    material_list=[
+        ['TVCG 2021', 'https://ieeexplore.ieee.org/document/9382902'],
+        ['Code', 'https://github.com/syz825211943/Multi-Style-Photo-Cartoonization'],
+    ],
+    award_name=null,
+);
+
+
+render_project(
     project_name='APDrawingGAN2',
     figure_path='./assets/projects/apdrawinggan2.jpg',
     title_name='Line Drawings for Face Portraits from Photos using Global and Local Structure based GANs',
@@ -295,16 +374,19 @@ render_author('Changsong Lei');
 render_author('Deli Zhao', 'https://zhaodeli.github.io/');
 render_author('Fan Cheng', 'https://www.cs.sjtu.edu.cn/~chengfan/');
 render_author('Guoxin Zhang');
+render_author('Jia Pan', 'https://www.cs.hku.hk/people/academic-staff/jpan');
 render_author('Jiapeng Zhu', 'https://scholar.google.com.sg/citations?user=-ACBm-gAAAAJ');
 render_author('Juyong Zhang', 'http://staff.ustc.edu.cn/~juyong/');
 render_author('Kecheng Zheng', 'https://zkcys001.github.io/');
 render_author('Lianghua Huang', 'https://scholar.google.ch/citations?user=JYVCn3AAAAAJ');
+render_author('Long Zeng', 'https://www.sigs.tsinghua.edu.cn/cl_en/main.htm');
 render_author('Mengfei Xia');
 render_author('Minjing Yu', 'https://scholar.google.com.hk/citations?user=Jq71vN8AAAAJ');
 render_author('Paul L. Rosin', 'https://users.cs.cf.ac.uk/Paul.Rosin/');
 render_author('Pengfei Wan', 'https://scholar.google.com/citations?user=P6MraaYAAAAJ');
 render_author('Qiang Li', 'https://sites.google.com/site/utsqiangli2/');
 render_author('Ran Yi', 'https://yiranran.github.io/');
+render_author('Teng Hu', 'https://sjtuplayer.github.io/');
 render_author('Wang Zhao', 'https://scholar.google.com/citations?user=oKqr-ZQAAAAJ');
 render_author('Wenping Wang', 'https://scholar.google.com/citations?user=28shvv0AAAAJ');
 render_author('Xuwei Huang');
@@ -312,6 +394,8 @@ render_author('Yanan Sun');
 render_author('Yang Chen', 'https://scholar.google.com.hk/citations?user=IOZERCcAAAAJ');
 render_author('Yezhi Shu', 'https://scholar.google.com/citations?user=ItEyqMAAAAAJ');
 render_author('Yifei Zhang', 'https://scholar.google.com/citations?user=rQKkIykAAAAJ');
+render_author('Yiheng Han', 'https://ieeexplore.ieee.org/author/37086529078');
+render_author('Yizhe Tang');
 render_author('Yong-Jin Liu', 'https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm');
 render_author('Yu Liu', 'https://scholar.google.com/citations?user=8zksQb4AAAAJ');
 render_author('Yu Zhou', 'https://scholar.google.com/citations?user=pMXjhxkAAAAJ');
