@@ -96,7 +96,7 @@ function render_author(author_name, link=null, alias=null) {
         if (alias) {
             context = alias + tailing;
         } else {
-            context = author_name + tailing;
+            context = author_name.replace(' ', '&nbsp;') + tailing;
         }
 
         if (link) {
@@ -172,6 +172,7 @@ render_project(
     ],
     material_list=[
         ['TPAMI 2024', 'https://ieeexplore.ieee.org/document/10607942/'],
+        ['Code', 'https://github.com/sjtuplayer/FEditNet2'],
     ],
     award_name=null,
 );
@@ -193,7 +194,7 @@ render_project(
         'Fan Cheng', 'corresponding',
     ],
     material_list=[
-        ['ECCV 2024', ''],
+        ['ECCV 2024', 'https://eccv.ecva.net/virtual/2024/poster/1588'],
         ['Code', 'https://github.com/zyf0619sjtu/GANdance'],
     ],
     award_name=null,
@@ -218,6 +219,26 @@ render_project(
     ],
     award_name=null,
 );
+
+
+render_project(
+    project_name='TADPM',
+    figure_path='./assets/projects/tadpm.png',
+    title_name='Automatic Tooth Arrangement with Joint Features of Point and Mesh Representations via Diffusion Probabilistic Models',
+    author_list=[
+        'Changsong Lei',
+        'Mengfei Xia',
+        'Shaofeng Wang',
+        'Yaqian Liang',
+        'Ran Yi',
+        'Yu-Hui Wen',
+        'Yong-Jin Liu', 'corresponding',
+    ],
+    material_list=[
+        ['CAGD 2024', 'https://arxiv.org/pdf/2312.15139v1.pdf']
+    ],
+    award_name=null,
+)
 
 
 render_project(
@@ -308,6 +329,24 @@ render_project(
 
 
 render_project(
+    project_name='GAN Survey',
+    figure_path='./assets/projects/gan_survey.png',
+    title_name='Adversarial Attack and Interpretability of the Deep Neural Network from the Geometric Perspective',
+    author_list=[
+        'Mengfei Xia',
+        'Zipeng Ye',
+        'Wang Zhao',
+        'Ran Yi',
+        'Yong-Jin Liu', 'corresponding',
+    ],
+    material_list=[
+        ['SCIENTIA SINICA Informationis 2021', 'http://scis.scichina.com/cn/2021/SSI-2020-0169.pdf'],
+    ],
+    award_name=null,
+);
+
+
+render_project(
     project_name='SE3',
     figure_path='./assets/projects/se3.jpg',
     title_name='Efficient SE(3) Reachability Map Generation via Interplanar Integration of Intra-planar Convolutions',
@@ -386,12 +425,14 @@ render_author('Paul L. Rosin', 'https://users.cs.cf.ac.uk/Paul.Rosin/');
 render_author('Pengfei Wan', 'https://scholar.google.com/citations?user=P6MraaYAAAAJ');
 render_author('Qiang Li', 'https://sites.google.com/site/utsqiangli2/');
 render_author('Ran Yi', 'https://yiranran.github.io/');
+render_author('Shaofeng Wang');
 render_author('Teng Hu', 'https://sjtuplayer.github.io/');
 render_author('Wang Zhao', 'https://scholar.google.com/citations?user=oKqr-ZQAAAAJ');
 render_author('Wenping Wang', 'https://scholar.google.com/citations?user=28shvv0AAAAJ');
 render_author('Xuwei Huang');
 render_author('Yanan Sun');
 render_author('Yang Chen', 'https://scholar.google.com.hk/citations?user=IOZERCcAAAAJ');
+render_author('Yaqian Liang', 'https://scholar.google.com.hk/citations?user=aTXDaREAAAAJ');
 render_author('Yezhi Shu', 'https://scholar.google.com/citations?user=ItEyqMAAAAAJ');
 render_author('Yifei Zhang', 'https://scholar.google.com/citations?user=rQKkIykAAAAJ');
 render_author('Yiheng Han', 'https://ieeexplore.ieee.org/author/37086529078');
@@ -401,6 +442,7 @@ render_author('Yu Liu', 'https://scholar.google.com/citations?user=8zksQb4AAAAJ'
 render_author('Yu Zhou', 'https://scholar.google.com/citations?user=pMXjhxkAAAAJ');
 render_author('Yuji Wang');
 render_author('Yujun Shen', 'https://shenyujun.github.io/');
+render_author('Yu-Hui Wen', 'https://scholar.google.com/citations?user=bsW8y9YAAAAJ');
 render_author('Yu-Kun Lai', 'https://users.cs.cf.ac.uk/Yukun.Lai/');
 render_author('Zhongyuan Wang', 'https://scholar.google.com/citations?user=4XVJrRAAAAAJ');
 render_author('Zipeng Ye', 'https://qq775193759.github.io/');
