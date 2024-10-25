@@ -141,6 +141,25 @@ render_project(
 
 
 render_project(
+    project_name='ReCFG',
+    figure_path='./assets/projects/recfg.png',
+    title_name='Rectified Diffusion Guidance for Conditional Generation',
+    author_list=[
+        'Mengfei Xia',
+        'Nan Xue',
+        'Yujun Shen',
+        'Ran Yi',
+        'Tieliang Gong',
+        'Yong-Jin Liu', 'corresponding',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/abs/2410.18737'],
+    ],
+    award_name=null,
+)
+
+
+render_project(
     project_name='DMT',
     figure_path='./assets/projects/dmt.jpg',
     title_name='A Diffusion Model Translator for Efficient Image-to-Image Translation',
@@ -409,7 +428,7 @@ render_project(
 
 
 render_author('Ceyuan Yang', 'https://ceyuan.me/');
-render_author('Changsong Lei');
+render_author('Changsong Lei', 'https://openreview.net/profile?id=~Changsong_Lei2');
 render_author('Deli Zhao', 'https://zhaodeli.github.io/');
 render_author('Fan Cheng', 'https://www.cs.sjtu.edu.cn/~chengfan/');
 render_author('Guoxin Zhang');
@@ -421,12 +440,14 @@ render_author('Lianghua Huang', 'https://scholar.google.ch/citations?user=JYVCn3
 render_author('Long Zeng', 'https://www.sigs.tsinghua.edu.cn/cl_en/main.htm');
 render_author('Mengfei Xia');
 render_author('Minjing Yu', 'https://scholar.google.com.hk/citations?user=Jq71vN8AAAAJ');
+render_author('Nan Xue', 'https://xuenan.net/');
 render_author('Paul L. Rosin', 'https://users.cs.cf.ac.uk/Paul.Rosin/');
 render_author('Pengfei Wan', 'https://scholar.google.com/citations?user=P6MraaYAAAAJ');
 render_author('Qiang Li', 'https://sites.google.com/site/utsqiangli2/');
 render_author('Ran Yi', 'https://yiranran.github.io/');
 render_author('Shaofeng Wang');
 render_author('Teng Hu', 'https://sjtuplayer.github.io/');
+render_author('Tieliang Gong', 'https://gong-tl.github.io/');
 render_author('Wang Zhao', 'https://scholar.google.com/citations?user=oKqr-ZQAAAAJ');
 render_author('Wenping Wang', 'https://scholar.google.com/citations?user=28shvv0AAAAJ');
 render_author('Xuwei Huang');
@@ -436,7 +457,7 @@ render_author('Yaqian Liang', 'https://scholar.google.com.hk/citations?user=aTXD
 render_author('Yezhi Shu', 'https://scholar.google.com/citations?user=ItEyqMAAAAAJ');
 render_author('Yifei Zhang', 'https://scholar.google.com/citations?user=rQKkIykAAAAJ');
 render_author('Yiheng Han', 'https://ieeexplore.ieee.org/author/37086529078');
-render_author('Yizhe Tang');
+render_author('Yizhe Tang', 'https://ieeexplore.ieee.org/author/231824469001966');
 render_author('Yong-Jin Liu', 'https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm');
 render_author('Yu Liu', 'https://scholar.google.com/citations?user=8zksQb4AAAAJ');
 render_author('Yu Zhou', 'https://scholar.google.com/citations?user=pMXjhxkAAAAJ');
