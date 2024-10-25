@@ -28,15 +28,6 @@ checkpoints/
 *.h5
 *.dat
 
-# Ignore media files.
-results/
-*.jpg
-*.png
-*.jpeg
-*.gif
-*.avi
-*.mp4
-
 # Ignore log files.
 resources/
 events/
