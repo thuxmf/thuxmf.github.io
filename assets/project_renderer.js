@@ -1,85 +1,82 @@
 // Functions.
 
-
 function render_project(project_name,
                         figure_path,
                         title_name,
                         author_list,
                         material_list,
                         award_name=null) {
-    if (document.getElementsByName(project_name).length === 0) {
-        return;
-    }
+    var list = document.getElementsByName(project_name);
+    for (var proj_idx = 0; proj_idx < list.length; proj_idx++) {
+        var img = document.createElement('img');
+        img.src = figure_path;
+        img.setAttribute('style',
+                        'width: 100%; max-height: 120px; object-fit: cover;');
 
-    var img = document.createElement('img');
-    img.src = figure_path;
-    img.setAttribute('style',
-                     'width: 100%; max-height: 120px; object-fit: cover;');
+        var title = document.createElement('div');
+        title.setAttribute('class', 'title');
+        title.innerHTML = title_name;
 
-    var title = document.createElement('div');
-    title.setAttribute('class', 'title');
-    title.innerHTML = title_name;
-
-    var author = document.createElement('div');
-    author.setAttribute('class', 'author');
-    author.innerHTML = '';
-    for (var idx = 0; idx < author_list.length; idx++) {
-        if (idx < author_list.length - 1 &&
-            (author_list[idx + 1] == 'equal' ||
-             author_list[idx + 1] == 'corresponding')) {
-            author.innerHTML += (
-                '<span name="' +
-                author_list[idx] +
-                '" title="' +
-                author_list[idx + 1] +
-                '"></span>');
-            idx++
-        } else {
-            author.innerHTML += (
-                '<span name="' +
-                author_list[idx] +
-                '" title="' +
-                '"></span>');
+        var author = document.createElement('div');
+        author.setAttribute('class', 'author');
+        author.innerHTML = '';
+        for (var idx = 0; idx < author_list.length; idx++) {
+            if (idx < author_list.length - 1 &&
+                (author_list[idx + 1] === 'equal' ||
+                author_list[idx + 1] === 'corresponding')) {
+                author.innerHTML += (
+                    '<span name="' +
+                    author_list[idx] +
+                    '" title="' +
+                    author_list[idx + 1] +
+                    '"></span>');
+                idx++
+            } else {
+                author.innerHTML += (
+                    '<span name="' +
+                    author_list[idx] +
+                    '" title="' +
+                    '"></span>');
+            }
+            if (idx < author_list.length - 1) {
+                author.innerHTML += ', ';
+            }
         }
-        if (idx < author_list.length - 1) {
-            author.innerHTML += ', ';
+
+        var material = document.createElement('div');
+        material.setAttribute('class', 'material');
+        material_list.innerHTML = '';
+        for (var idx = 0; idx < material_list.length; idx++) {
+            material.innerHTML += (
+                '<a href="' +
+                material_list[idx][1] +
+                '" target="_blank">' +
+                material_list[idx][0] +
+                '</a>');
+            if (idx < material_list.length - 1) {
+                material.innerHTML += ' / ';
+            }
         }
-    }
 
-    var material = document.createElement('div');
-    material.setAttribute('class', 'material');
-    material_list.innerHTML = '';
-    for (var idx = 0; idx < material_list.length; idx++) {
-        material.innerHTML += (
-            '<a href="' +
-            material_list[idx][1] +
-            '" target="_blank">' +
-            material_list[idx][0] +
-            '</a>');
-        if (idx < material_list.length - 1) {
-            material.innerHTML += ' / ';
+        if (award_name) {
+            var award = document.createElement('div');
+            award.setAttribute('class', 'award');
+            award.innerHTML = award_name;
         }
-    }
 
-    if (award_name) {
-        var award = document.createElement('div');
-        award.setAttribute('class', 'award');
-        award.innerHTML = award_name;
-    }
-
-    var row = document.getElementsByName(project_name)[0];
-    var cell = row.insertCell(0);
-    cell.setAttribute('width', '25%');
-    cell.appendChild(img);
-    cell = row.insertCell(1);
-    cell.appendChild(title);
-    cell.appendChild(author);
-    cell.appendChild(material);
-    if (award_name) {
-        cell.appendChild(award);
+        var row = document.getElementsByName(project_name)[proj_idx];
+        var cell = row.insertCell(0);
+        cell.setAttribute('width', '25%');
+        cell.appendChild(img);
+        cell = row.insertCell(1);
+        cell.appendChild(title);
+        cell.appendChild(author);
+        cell.appendChild(material);
+        if (award_name) {
+            cell.appendChild(award);
+        }
     }
 };
-
 
 function render_author(author_name, link=null, alias=null) {
     var list = document.getElementsByName(author_name);
@@ -110,7 +107,7 @@ function render_author(author_name, link=null, alias=null) {
             list[idx].innerHTML = context;
         }
 
-        if (author_name === 'Mengfei Xia') {
+        if (author_name === 'Yujun Shen') {
             list[idx].setAttribute('class', 'me');
         }
     }
@@ -283,6 +280,28 @@ render_project(
 
 
 render_project(
+    project_name='3DCariGAN',
+    figure_path='./assets/projects/3d_carigan.png',
+    title_name='3D-CariGAN: An End-to-End Solution to 3D Caricature Generation from Normal Face Photos',
+    author_list=[
+        'Zipeng Ye',
+        'Mengfei Xia',
+        'Yanan Sun',
+        'Ran Yi',
+        'Minjing Yu',
+        'Juyong Zhang',
+        'Yu-Kun Lai',
+        'Yong-Jin Liu', 'corresponding',
+    ],
+    material_list=[
+        ['TVCG 2023', 'https://ieeexplore.ieee.org/abstract/document/9609545'],
+        ['Code', 'https://github.com/qq775193759/3D-CariGAN'],
+    ],
+    award_name=null,
+);
+
+
+render_project(
     project_name='FEditNet',
     figure_path='./assets/projects/feditnet.png',
     title_name='FEditNet: Few-Shot Editing of Latent Semantics in GAN Spaces',
@@ -319,29 +338,48 @@ render_project(
         'Yong-Jin Liu', 'corresponding',
     ],
     material_list=[
-        ['TMM 2022', 'https://arxiv.org/pdf/2201.05986v1'],
+        ['TMM 2023', 'https://arxiv.org/pdf/2201.05986v1'],
     ],
     award_name=null,
 );
 
 
 render_project(
-    project_name='3DCariGAN',
-    figure_path='./assets/projects/3d_carigan.png',
-    title_name='3D-CariGAN: An End-to-End Solution to 3D Caricature Generation from Normal Face Photos',
+    project_name='MSCartoonGAN',
+    figure_path='./assets/projects/ms_cartoongan.jpg',
+    title_name='GAN-Based Multi-Style Photo Cartoonization',
     author_list=[
-        'Zipeng Ye',
-        'Mengfei Xia',
-        'Yanan Sun',
+        'Yezhi Shu',
         'Ran Yi',
-        'Minjing Yu',
-        'Juyong Zhang',
+        'Mengfei Xia',
+        'Zipeng Ye',
+        'Wang Zhao',
+        'Yang Chen',
         'Yu-Kun Lai',
         'Yong-Jin Liu', 'corresponding',
     ],
     material_list=[
-        ['TVCG 2021', 'https://ieeexplore.ieee.org/abstract/document/9609545'],
-        ['Code', 'https://github.com/qq775193759/3D-CariGAN'],
+        ['TVCG 2022', 'https://ieeexplore.ieee.org/document/9382902'],
+        ['Code', 'https://github.com/syz825211943/Multi-Style-Photo-Cartoonization'],
+    ],
+    award_name=null,
+);
+
+
+render_project(
+    project_name='APDrawingGAN2',
+    figure_path='./assets/projects/apdrawinggan2.jpg',
+    title_name='Line Drawings for Face Portraits from Photos using Global and Local Structure based GANs',
+    author_list=[
+        'Ran Yi',
+        'Mengfei Xia',
+        'Yong-Jin Liu',
+        'Yu-Kun Lai',
+        'Paul L. Rosin',
+    ],
+    material_list=[
+        ['TPAMI 2021', 'https://ieeexplore.ieee.org/document/9069416'],
+        ['Code', 'https://github.com/yiranran/APDrawingGAN2'],
     ],
     award_name=null,
 );
@@ -378,47 +416,6 @@ render_project(
     ],
     material_list=[
         ['ICRA 2021', 'https://ieeexplore.ieee.org/document/9561921'],
-    ],
-    award_name=null,
-);
-
-
-render_project(
-    project_name='MSCartoonGAN',
-    figure_path='./assets/projects/ms_cartoongan.jpg',
-    title_name='GAN-Based Multi-Style Photo Cartoonization',
-    author_list=[
-        'Yezhi Shu',
-        'Ran Yi',
-        'Mengfei Xia',
-        'Zipeng Ye',
-        'Wang Zhao',
-        'Yang Chen',
-        'Yu-Kun Lai',
-        'Yong-Jin Liu', 'corresponding',
-    ],
-    material_list=[
-        ['TVCG 2021', 'https://ieeexplore.ieee.org/document/9382902'],
-        ['Code', 'https://github.com/syz825211943/Multi-Style-Photo-Cartoonization'],
-    ],
-    award_name=null,
-);
-
-
-render_project(
-    project_name='APDrawingGAN2',
-    figure_path='./assets/projects/apdrawinggan2.jpg',
-    title_name='Line Drawings for Face Portraits from Photos using Global and Local Structure based GANs',
-    author_list=[
-        'Ran Yi',
-        'Mengfei Xia',
-        'Yong-Jin Liu',
-        'Yu-Kun Lai',
-        'Paul L. Rosin',
-    ],
-    material_list=[
-        ['TPAMI 2020', 'https://ieeexplore.ieee.org/document/9069416'],
-        ['Code', 'https://github.com/yiranran/APDrawingGAN2'],
     ],
     award_name=null,
 );

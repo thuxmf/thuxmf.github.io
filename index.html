@@ -34,7 +34,7 @@
 
 <!-- === Avatar Starts === -->
 <br>
-<table style="font-size: 12pt;" width="100%" border="0">
+<table style="font-size: 12pt;" width="100%" border="0" id="biography">
 <tbody>
   <tr>
     <td width="60%">
@@ -42,10 +42,10 @@
         <b>Mengfei Xia</b>
       </p>
       <p style="text-align: justify;">
-        I am currently a last-year Ph.D. student at the Department of Computer Science and Technology, Tsinghua University, advised by <a href="https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm">Prof. Yong-Jin Liu</a>. Before that in 2020, I obtained my B.S. degree at the Department of Mathematical Science, Tsinghua University. I work closely with <a href="https://shenyujun.github.io/">Dr. Yujun Shen</a>. My research focuses on computer vision and deep learning, particularly on <b>generative models</b>.
+        I am currently a last-year Ph.D. student at the Department of Computer Science and Technology, Tsinghua University, advised by <a href="https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm">Prof. Yong-Jin Liu</a>. Before that in 2020, I obtained my B.S. degree at the Department of Mathematical Sciences, Tsinghua University. I work closely with <a href="https://shenyujun.github.io/">Dr. Yujun Shen</a>. My research focuses on computer vision and deep learning, particularly on <b>generative models</b>.
       </p>
       <p style="text-align: justify;">
-        I will be an associate research scientist at Ant Research in Summer 2025.
+        I will be a senior research scientist at Ant Research in Summer 2025.
       </p>
       <br>
       <a href="https://scholar.google.com/citations?user=jmOlxQ0AAAAJ" target="_blank">Google Scholar</a>&nbsp;&nbsp;/&nbsp;
@@ -78,12 +78,19 @@
 <!-- === News Starts === -->
 <br>
 <h2>News</h2>
-<ul>
-  <li><strong>[07/2024]</strong> 2 papers (<a href="https://ieeexplore.ieee.org/document/10614866" target="_blank">DMT</a>, <a href="https://ieeexplore.ieee.org/document/10607942/" target="_blank">FEditNet++</a>) included in TPAMI 2024</a>.</li>
+<ul id="news">
+  <li><strong>[07/2024]</strong> 2 papers (<a href="https://ieeexplore.ieee.org/document/10614866" target="_blank">DMT</a>, <a href="https://ieeexplore.ieee.org/document/10607942/" target="_blank">FEditNet++</a>) included in TPAMI 2024.</li>
   <li><strong>[07/2024]</strong> 1 paper accepted to <a href="https://eccv2024.ecva.net/" target="_blank">ECCV 2024</a> (Milano, Italy).</li>
   <li><strong>[05/2024]</strong> 1 paper accepted to <a href="https://icml.cc/Conferences/2024" target="_blank">ICML 2024</a> (Vienna, Austria).</li>
   <li><strong>[02/2024]</strong> 1 paper accepted to <a href="https://cvpr.thecvf.com/Conferences/2024" target="_blank">CVPR 2024</a> (Seattle, U.S.).</li>
+  <div id="hidden_news" style="display:none">
+  <li><strong>[04/2023]</strong> 1 paper (<a href="https://ieeexplore.ieee.org/abstract/document/9609545" target="_blank">3DCariGAN</a>) included in TVCG 2023.</li>
   <li><strong>[02/2023]</strong> 1 paper accepted to <a href="https://aaai-23.aaai.org/" target="_blank">AAAI 2023</a> (Washington, DC, U.S.).</li>
+  <li><strong>[01/2023]</strong> 1 paper (<a href="https://arxiv.org/pdf/2201.05986v1" target="_blank">DCK</a>) included in TMM 2023.</li>
+  <li><strong>[10/2022]</strong> 1 paper (<a href="https://ieeexplore.ieee.org/document/9382902" target="_blank">Multi-Style CartoonGAN</a>) included in TVCG 2022.</li>
+  <li><strong>[10/2021]</strong> 1 paper (<a href="https://ieeexplore.ieee.org/document/9069416" target="_blank">APDrawingGAN++</a>) included in TPAMI 2021.</li>
+  </div>
+  <a style="display: block; margin-top: 5pt;" onclick="toggle_hidden('news')" id="toggle_hidden_news">[Show more]</a>
 </ul>
 <!-- === News Ends === -->
 
@@ -91,8 +98,7 @@
 <!-- === Software Starts === -->
 <br>
 <h2>Softwares</h2>
-
-<ul>
+<ul id="software">
   <li><strong>[07/2024]</strong>
     We release
     <a href="https://github.com/thuxmf/resume" target="_blank">Resume Template</a>,
@@ -104,23 +110,50 @@
 
 <!-- === Publication Starts === -->
 <br>
-<h2>
-  Recent Studies
-  <small>[<a href="./0_publication_selected.html">Publication List</a>]</small>
-</h2>
+<h2>Publications</h2>
+<table cellspacing="17" id="publication">
 
-<table cellspacing="17">
-<tbody>
+<a style="color: #000000;" onclick="switch_pub('recent')" id="switch_pub_recent">Recent</a> &nbsp;/&nbsp;
+<a onclick="switch_pub('selected')" id="switch_pub_selected">Selected</a> &nbsp;/&nbsp;
+<a onclick="switch_pub('full')" id="switch_pub_full">Full</a>
 
-<tr name="ReCFG"></tr>
-<tr name="DMT"></tr>
-<tr name="FEditNet++"></tr>
-<tr name="GANdance"></tr>
-<tr name="SMaRt"></tr>
-<tr name="TimeTuner"></tr>
-<tr name="FEditNet"></tr>
-
+<tbody id="pub_recent" style='display: inline'>
+  <tr name="ReCFG"></tr>
+  <tr name="DMT"></tr>
+  <tr name="FEditNet++"></tr>
+  <tr name="GANdance"></tr>
+  <tr name="SMaRt"></tr>
+  <tr name="TimeTuner"></tr>
 </tbody>
+
+<tbody id="pub_selected" style='display: none'>
+  <tr name="ReCFG"></tr>
+  <tr name="DMT"></tr>
+  <tr name="FEditNet++"></tr>
+  <tr name="GANdance"></tr>
+  <tr name="SMaRt"></tr>
+  <tr name="TimeTuner"></tr>
+  <tr name="FEditNet"></tr>
+  <tr name="APDrawingGAN2"></tr>
+</tbody>
+
+<tbody id="pub_full" style='display: none'>
+  <tr name="ReCFG"></tr>
+  <tr name="DMT"></tr>
+  <tr name="FEditNet++"></tr>
+  <tr name="GANdance"></tr>
+  <tr name="SMaRt"></tr>
+  <tr name="TADPM"></tr>
+  <tr name="TimeTuner"></tr>
+  <tr name="3DCariGAN"></tr>
+  <tr name="FEditNet"></tr>
+  <tr name="DCK"></tr>
+  <tr name="MSCartoonGAN"></tr>
+  <tr name="APDrawingGAN2"></tr>
+  <tr name="GAN Survey"></tr>
+  <tr name="SE3"></tr>
+</tbody>
+
 </table>
 <!-- === Publication Ends === -->
 
@@ -129,7 +162,7 @@
 <br>
 <h2>Experiences</h2>
 
-<table cellspacing="17">
+<table cellspacing="17" id="experience">
 <tbody>
 
 <!--
@@ -198,7 +231,7 @@
 <!--
 <br>
 <h2>Professional Activities</h2>
-<ul>
+<ul id="activity">
   <li>Conference reviewer: CVPR, AAAI, ICLR</li>
 </ul>
 -->
