@@ -150,7 +150,8 @@ render_project(
         'Yong-Jin Liu', 'corresponding',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/abs/2410.18737'],
+        ['CVPR 2025', 'https://arxiv.org/abs/2410.18737'],
+        ['Code', 'https://github.com/thuxmf/recfg'],
     ],
     award_name=null,
 )
