@@ -144,7 +144,7 @@ render_project(
     author_list=[
         'Mengfei Xia',
         'Nan Xue',
-        'Yujun Shen',
+        'Yujun Shen', 'corresponding',
         'Ran Yi',
         'Tieliang Gong',
         'Yong-Jin Liu', 'corresponding',
