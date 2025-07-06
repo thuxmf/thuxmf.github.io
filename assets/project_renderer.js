@@ -150,7 +150,7 @@ render_project(
         'Yong-Jin Liu', 'corresponding',
     ],
     material_list=[
-        ['CVPR 2025', 'https://arxiv.org/abs/2410.18737'],
+        ['CVPR 2025', 'https://openaccess.thecvf.com/content/CVPR2025/papers/Xia_Rectified_Diffusion_Guidance_for_Conditional_Generation_CVPR_2025_paper.pdf'],
         ['Code', 'https://github.com/thuxmf/recfg'],
     ],
     award_name=null,
@@ -252,7 +252,7 @@ render_project(
         'Yong-Jin Liu', 'corresponding',
     ],
     material_list=[
-        ['CAGD 2024', 'https://arxiv.org/pdf/2312.15139v1.pdf']
+        ['CAGD 2024', 'https://www.sciencedirect.com/science/article/abs/pii/S016783962400027X']
     ],
     award_name=null,
 )
@@ -339,7 +339,7 @@ render_project(
         'Yong-Jin Liu', 'corresponding',
     ],
     material_list=[
-        ['TMM 2023', 'https://arxiv.org/pdf/2201.05986v1'],
+        ['TMM 2023', 'https://ieeexplore.ieee.org/document/9681173/'],
     ],
     award_name=null,
 );
