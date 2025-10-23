@@ -138,6 +138,23 @@ render_project(
 
 
 render_project(
+    project_name='UCD',
+    figure_path='./assets/projects/ucd.png',
+    title_name='UCD: Unconditional Discriminator Promotes Nash Equilibrium in GANs',
+    author_list=[
+        'Mengfei Xia', 'equal',
+        'Nan Xue', 'equal',
+        'Jiapeng Zhu',
+        'Yujun Shen', 'corresponding',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2510.00624'],
+    ],
+    award_name=null,
+)
+
+
+render_project(
     project_name='ReCFG',
     figure_path='./assets/projects/recfg.png',
     title_name='Rectified Diffusion Guidance for Conditional Generation',
