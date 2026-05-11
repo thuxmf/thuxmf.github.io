@@ -138,6 +138,45 @@ render_project(
 
 
 render_project(
+    project_name='SHIFT',
+    figure_path='./assets/projects/shift.png',
+    title_name='SHIFT: Motion Alignment in Video Diffusion Models with Adversarial Hybrid Fine-Tuning',
+    author_list=[
+        'Xi Ye',
+        'Wenjia Yang',
+        'Yangyang Xu',
+        'Xiaoyang Liu',
+        'Duo Su',
+        'Mengfei Xia',
+        'Jun Zhu', 'corresponding',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2603.17426'],
+    ],
+    award_name=null,
+)
+
+
+render_project(
+    project_name='GraSF',
+    figure_path='./assets/projects/grasf.png',
+    title_name='Rectifying GAN Gradient Supervision via Score Functions',
+    author_list=[
+        'Mengfei Xia', 'equal',
+        'Ran Yi', 'equal',
+        'Nan Xue',
+        'Yujun Shen', 'corresponding',
+        'Kairui Wen',
+        'Wenping Wang',
+        'Yong-Jin Liu', 'corresponding',
+    ],
+    material_list=[
+    ],
+    award_name=null,
+)
+
+
+render_project(
     project_name='UCD',
     figure_path='./assets/projects/ucd.png',
     title_name='UCD: Unconditional Discriminator Promotes Nash Equilibrium in GANs',
@@ -363,6 +402,26 @@ render_project(
 
 
 render_project(
+    project_name='IMIT',
+    figure_path='./assets/projects/imit.png',
+    title_name='Aligned Forgetting Mechanism for Imbalanced Image-to-Image Translation',
+    author_list=[
+        'Yezhi Shu',
+        'Mengfei Xia',
+        'Qiang Li',
+        'Guoxin Zhang',
+        'Pengfei Wan',
+        'Wen Zheng',
+        'Yong-Jin Liu', 'corresponding',
+    ],
+    material_list=[
+        ['SCIENTIA SINICA Informationis 2023', 'https://www.sciengine.com/doi/pdf/34C7066558664172ABE987C079D92FC0'],
+    ],
+    award_name=null,
+);
+
+
+render_project(
     project_name='MSCartoonGAN',
     figure_path='./assets/projects/ms_cartoongan.jpg',
     title_name='GAN-Based Multi-Style Photo Cartoonization',
@@ -445,11 +504,14 @@ render_project(
 render_author('Ceyuan Yang', 'https://ceyuan.me/');
 render_author('Changsong Lei', 'https://openreview.net/profile?id=~Changsong_Lei2');
 render_author('Deli Zhao', 'https://zhaodeli.github.io/');
+render_author('Duo Su', 'https://suduo94.github.io/');
 render_author('Fan Cheng', 'https://www.cs.sjtu.edu.cn/~chengfan/');
 render_author('Guoxin Zhang');
 render_author('Jia Pan', 'https://www.cs.hku.hk/people/academic-staff/jpan');
 render_author('Jiapeng Zhu', 'https://scholar.google.com.sg/citations?user=-ACBm-gAAAAJ');
+render_author('Jun Zhu', 'https://ml.cs.tsinghua.edu.cn/~jun/index.shtml');
 render_author('Juyong Zhang', 'http://staff.ustc.edu.cn/~juyong/');
+render_author('Kairui Wen');
 render_author('Kecheng Zheng', 'https://zkcys001.github.io/');
 render_author('Lianghua Huang', 'https://scholar.google.ch/citations?user=JYVCn3AAAAAJ');
 render_author('Long Zeng', 'https://www.sigs.tsinghua.edu.cn/cl_en/main.htm');
@@ -464,10 +526,15 @@ render_author('Shaofeng Wang');
 render_author('Teng Hu', 'https://sjtuplayer.github.io/');
 render_author('Tieliang Gong', 'https://gong-tl.github.io/');
 render_author('Wang Zhao', 'https://scholar.google.com/citations?user=oKqr-ZQAAAAJ');
+render_author('Wen Zheng');
+render_author('Wenjia Yang', 'https://github.com/wwj-y');
 render_author('Wenping Wang', 'https://scholar.google.com/citations?user=28shvv0AAAAJ');
+render_author('Xi Ye', 'https://scholar.google.com/citations?user=Woehn70AAAAJ&hl=en');
+render_author('Xiaoyang Liu');
 render_author('Xuwei Huang');
 render_author('Yanan Sun');
 render_author('Yang Chen', 'https://scholar.google.com.hk/citations?user=IOZERCcAAAAJ');
+render_author('Yangyang Xu', 'https://yangyangxu0.github.io/homepage/');
 render_author('Yaqian Liang', 'https://scholar.google.com.hk/citations?user=aTXDaREAAAAJ');
 render_author('Yezhi Shu', 'https://scholar.google.com/citations?user=ItEyqMAAAAAJ');
 render_author('Yifei Zhang', 'https://scholar.google.com/citations?user=rQKkIykAAAAJ');
@@ -482,4 +549,3 @@ render_author('Yu-Hui Wen', 'https://scholar.google.com/citations?user=bsW8y9YAA
 render_author('Yu-Kun Lai', 'https://users.cs.cf.ac.uk/Yukun.Lai/');
 render_author('Zhongyuan Wang', 'https://scholar.google.com/citations?user=4XVJrRAAAAAJ');
 render_author('Zipeng Ye', 'https://qq775193759.github.io/');
-
